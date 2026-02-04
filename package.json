@@ -1,0 +1,25 @@
+{
+  "name": "@landomo/scraper-portugal-idealista",
+  "version": "1.0.0",
+  "description": "Scraper for idealista.pt - extracts __NEXT_DATA__ with DataDome bypass",
+  "type": "module",
+  "scripts": {
+    "scrape": "npx tsx src/index.ts",
+    "test": "npx tsx src/index.ts --location lisboa --limit 5",
+    "dev": "npx tsx watch src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "playwright": "^1.49.1",
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^12.0.0",
+    "redis": "^4.6.12",
+    "pino": "^8.17.2",
+    "pino-pretty": "^10.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
