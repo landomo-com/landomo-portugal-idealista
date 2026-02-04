@@ -1,4 +1,4 @@
-import { createLogger } from '@shared/logger';
+import { createLogger } from './logger';
 /**
  * Parser for Idealista.pt __NEXT_DATA__ JSON structure
  *
@@ -6,7 +6,7 @@ import { createLogger } from '@shared/logger';
  * Note: Structure is identical to Idealista Italy/Spain
  */
 
-import type { Property } from '@shared/types.js';
+import type { Property } from './types';
 
 const logger = createLogger('module');
 

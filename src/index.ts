@@ -1,4 +1,4 @@
-import { createLogger } from '@shared/logger';
+import { createLogger } from './logger';
 /**
  * Idealista.pt Scraper - CLI Entry Point
  *
@@ -17,8 +17,8 @@ import { createLogger } from '@shared/logger';
 
 import { Command } from 'commander';
 import { IdealistaScraper, PORTUGUESE_LOCATIONS } from './scraper.js';
-import { connectRedis, disconnectRedis, saveProperties } from '@shared/redis.js';
-import type { Property } from '@shared/types.js';
+import { connectRedis, disconnectRedis, saveProperties } from './redis';
+import type { Property } from './types';
 
 const logger = createLogger('module');
 

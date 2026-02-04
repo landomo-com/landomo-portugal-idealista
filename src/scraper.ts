@@ -1,4 +1,4 @@
-import { createLogger } from '@shared/logger';
+import { createLogger } from './logger';
 /**
  * Idealista.pt Scraper
  *
@@ -22,9 +22,9 @@ import {
   humanScroll,
   humanClick,
   bypassDataDome,
-} from '@shared/stealth.js';
-import type { Property } from '@shared/types.js';
-import { delay as sleep } from '@shared/utils.js';
+} from './stealth';
+import type { Property } from './types';
+import { delay as sleep } from './utils';
 import { parseNextData, IdealistaNextData } from './parser.js';
 
 const BASE_URL = 'https://www.idealista.pt';
